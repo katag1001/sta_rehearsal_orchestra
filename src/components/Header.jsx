@@ -12,6 +12,7 @@ function Header() {
 
       <nav className="header_nav">
         <Link to="/">Home</Link>
+        <Link to="/programme">Programme</Link>
         <Link to="/location">Location</Link>
         <Link to="/conductor">Conductor</Link>
         <Link to="/repertoire">Repertoire</Link>
