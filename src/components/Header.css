@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Bebas+Neue&display=swap');
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header__logo img {
+  height: 60px;
+  width: auto;
+}
+
+.header__nav {
+  display: flex;
+  gap: 1.75rem;
+}
+
+.header__nav a {
+  font-family: 'Oswald', 'Bebas Neue', 'Arial Narrow', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(43, 67, 98);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.header__nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(43, 67, 98);
+  transition: width 0.3s ease;
+}
+
+.header__nav a:hover {
+  color: rgb(30, 50, 75);
+}
+
+.header__nav a:hover::after {
+  width: 100%;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .header__logo img {
+    height: 50px;
+  }
+}
