@@ -6,11 +6,11 @@ import logo from '../assets/logo.png'
 function Header() {
   return (
     <header className="header">
-      <div className="header__logo">
-        <img src={logo} alt="Logo" />
+      <div className="header_logo">
+        <Link to="/"><img src={logo} alt="Logo" /></Link>
       </div>
 
-      <nav className="header__nav">
+      <nav className="header_nav">
         <Link to="/">Home</Link>
         <Link to="/location">Location</Link>
         <Link to="/conductor">Conductor</Link>

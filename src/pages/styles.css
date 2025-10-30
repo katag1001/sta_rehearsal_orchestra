@@ -1,21 +1,27 @@
-.slash_screen {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Bebas+Neue&display=swap');
 
 .slash_img {
   width: 100%;
   height: auto;
   display: block;
-  filter: brightness(80%);
+  margin: 0;
+  padding: 0;
 }
 
-/* Heading overlays the image, scrolls until image bottom */
+
+.slash_screen {
+  position: relative; 
+  width: 100%;
+  margin: 0.5rem 0rem;
+  overflow: hidden;
+}
+
 .slash_screen h1 {
-  position: sticky;
-  top: 40vh;
+  position: absolute;  
+  top: 30%;            
+  left: 50%;           
+  transform: translate(-50%, -50%);
+  
   text-align: center;
   font-family: 'Bebas Neue', 'Oswald', sans-serif;
   font-size: 3rem;
@@ -25,7 +31,17 @@
   text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
   z-index: 2;
   width: 90%;
-  margin: 0 auto;
+}
+
+.slash_screen::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), white 90%);
+  pointer-events: none;
 }
 
 
@@ -34,12 +50,11 @@
   flex-direction: column;    
   justify-content: center;  
   align-items: center;   
-  
   min-height: 100vh;  
   padding: 30px;
-  
   background: #f9f9f9;
   font-size: 1.5rem;
+  font-family: 'Oswald', 'Bebas Neue', 'Arial Narrow', sans-serif;
   color: rgb(43, 67, 98);
   text-align: center;    
 }
