@@ -6,12 +6,12 @@ const Gallery = () => {
   const [activeAlbum, setActiveAlbum] = useState('album1');
 
   const albumNames = [
-    { id: 'album1', label: 'Album 1' },
-    { id: 'album2', label: 'Album 2' },
-    { id: 'album3', label: 'Album 3' },
-    { id: 'album4', label: 'Album 4' },
-    { id: 'album5', label: 'Album 5' },
-    { id: 'album6', label: 'Album 6' },
+    { id: 'album1', label: '2012 5th Anniversary' },
+    { id: 'album2', label: '2023 Farewell to Martin Georgiev' },
+    { id: 'album3', label: '2025 Farewell to Roger Barnes' },
+    { id: 'album4', label: '2023 Christmas' },
+    { id: 'album5', label: '2022 15th Anniversary' },
+    { id: 'album6', label: 'Past photographs' },
   ];
 
   console.log('[Gallery.jsx] Rendered with activeAlbum =', activeAlbum);

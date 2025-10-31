@@ -1,14 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Header from '../components/Header'
+import Header from '../components/Header';
+import './styles.css';
+import contactImg from '../assets/contact.jpg'; 
+import './styles.css';
 
 const Contact = () => {
   return (
     <div>
-        <Header />
-        <h2>Contact</h2>
+      <Header />
+      <div className="page_container">
+        <div className="page_box">
+          <h2>Further Information</h2>
+          <p>Email the secretary: staeroenquiry@gmail.com</p>
+
+
+        </div>
+
+        <div className="page_image">
+          <img src={contactImg}/>
+        </div>
       </div>
-  )
-}
+    </div>
+  );
+};
 
 export default Contact;
